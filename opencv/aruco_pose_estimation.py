@@ -40,8 +40,8 @@ import cv2.aruco as aruco
 import sys, time, math
 
 #--- Define Tag
-id_to_find  = 72
-marker_size  = 10 #- [cm]
+id_to_find  = 0
+marker_size  = 13.23 #- [cm]
 
 
 #------------------------------------------------------------------------------
@@ -92,7 +92,7 @@ R_flip[1,1] =-1.0
 R_flip[2,2] =-1.0
 
 #--- Define the aruco dictionary
-aruco_dict  = aruco.getPredefinedDictionary(aruco.DICT_ARUCO_ORIGINAL)
+aruco_dict  = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 parameters  = aruco.DetectorParameters_create()
 
 
